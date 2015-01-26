@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Sample App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+   
+    <!-- build:css(.tmp) styles/main.css -->
+    <!-- bower:css -->
+	<link rel="stylesheet" href="styles/main.css" type="text/css" />
+	<!-- endbower -->
+    <!-- endbuild -->
+
+  </head>
+  
+  <body>
+	
+	<h1>Typescript Drawing Example</h1>
+    <div id="content">
+		<canvas id="drawingCanvas" width="578" height="200" height="400" width="570"
+                 style="border: 4px solid black;"></canvas>
+	</div>
+		
+	<!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+	<script src="vendor/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+	<!-- build:js({.tmp,app}) scripts/scripts.js -->
+	<script src="src/app.js"></script>
+	<!-- endbuild -->
+	<script>
+		new sample.Driver().draw();
+	</script>
+</body>
+</html>
