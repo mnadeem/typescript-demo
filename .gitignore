@@ -4,3 +4,7 @@ dist
 .sass-cache
 bower_components
 vendor
+app/src/*.js
+.project
+.tscache
+.tmp
