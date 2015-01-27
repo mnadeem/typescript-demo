@@ -10,5 +10,8 @@ module.exports = {
 		dev: {                          // a particular target   
 			src: ["app/src/**/*.ts"],       // The source typescript files, See : http://gruntjs.com/configuring-tasks#files
 			out: 'app/src/app.js',    // If specified, generate an out.js file which is the merged js file
-		} 
+		},
+		test: {                          // a particular target   
+			src: ["test/spec/**/*.ts"],       // The source typescript files, See : http://gruntjs.com/configuring-tasks#files
+		}
 }

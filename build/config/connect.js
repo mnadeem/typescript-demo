@@ -19,7 +19,23 @@ module.exports = {
         return middlewares;
       }
     }
-  },  
+  },
+  test: {
+	    options: {
+	      port: '<%= appConfig.ports.test %>',
+	      middleware: function (connect) {
+	    	  var middlewares = [];
+
+	          // Serve static files.
+	          middlewares.push(connect.static(require('path').resolve('.tmp')));
+	          middlewares.push(connect.static(require('path').resolve('test')));
+	          middlewares.push(connect().use('/vendor', connect.static(require('path').resolve('./vendor'))));
+	          middlewares.push(connect.static(require('path').resolve('app')));
+
+	        return middlewares;
+	      }
+	    }
+	  },
   dist: {
     options: {
       open: true,

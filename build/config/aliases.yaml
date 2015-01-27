@@ -17,4 +17,12 @@ build:
   - 'uglify'
   - 'filerev'
   - 'usemin'
-  - 'htmlmin'
+  - 'htmlmin' 
+test:
+  - 'clean:reports'
+  - 'clean:server'
+  - 'ts'
+  - 'concurrent:test'
+  - 'autoprefixer'
+  - 'connect:test'
+  - 'karma'
