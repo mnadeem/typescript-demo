@@ -13,5 +13,6 @@ module.exports = {
 		},
 		test: {                          // a particular target   
 			src: ["test/spec/**/*.ts"],       // The source typescript files, See : http://gruntjs.com/configuring-tasks#files
+			out: 'test/spec/tests.js',    // If specified, generate an out.js file which is the merged js file
 		}
 }
