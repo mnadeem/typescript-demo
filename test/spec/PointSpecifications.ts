@@ -1,13 +1,19 @@
 /// <reference path='includes.ts' />
 
-describe('A FizzBuzz generator', () => {
+describe('Line API', () => {
+
     beforeEach(() => {
-        this.point  = new sample.Point(10, 30);
+        this.point  = new sample.Point(10, 20);
     });
 
     it('should return the number 10 when point x is 10', () => {
         var result = this.point.x
         expect(result).toBe(10);
-    });   
+    });
+
+    it('should return the number 20 when point y is 20', () => {
+        var result = this.point.y;
+        expect(result).toBe(20);
+    }); 
 
 });

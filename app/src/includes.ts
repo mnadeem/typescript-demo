@@ -3,4 +3,3 @@
 /// <reference path="Point.ts"/>
 /// <reference path="Line.ts"/>
 /// <reference path="Circle.ts"/>
-

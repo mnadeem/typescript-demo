@@ -15,7 +15,5 @@ module sample {
 	      	context.lineTo(this.end.x, this.end.y);
 	      	context.stroke();
 		}
-	
 	}
-
 }
