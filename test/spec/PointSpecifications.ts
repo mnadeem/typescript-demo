@@ -19,6 +19,5 @@ describe('Line API', () => {
     it('Point Equilatiy Test', () => {
         var result = this.point.y;
         expect(this.point.equals(new sample.Point(10, 20))).toBe(true);
-    });  
-
+    });
 });

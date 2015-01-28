@@ -17,7 +17,20 @@ describe('Circle API', () => {
     });
 
     it('Line Equilatiy Test', () => {
-        expect(this.circle.equals(new sample.Circle(new sample.Point(10, 20), 20))).toBe(true);
-    });  
+        expect(this.circle.equals(new sample.Circle(new sample.Point(10, 20), 20))).toBe(true);        
+    }); 
+    
+    it('Should draw on context', () => {
+       
+        var mockedMethods:Array<string> = ["beginPath", "arc", "fillStyle", "fill", "lineWidth", "strokeStyle", "stroke"];
+        var fake:CanvasRenderingContext2D  = jasmine.createSpyObj<CanvasRenderingContext2D>("context", mockedMethods);
+        this.circle.draw(fake);
+
+        expect(fake.beginPath).toHaveBeenCalled();
+       //expect(fake.arc).toHaveBeenCalled();
+        //expect(fake.fillStyle).toHaveBeenCalled();
+        //expect(fake.fill).toHaveBeenCalled();
+        //expect(fake.lineWidth).toHaveBeenCalledWith(5);
+    });
 
 });
