@@ -8,3 +8,4 @@ app/src/*.js
 .project
 .tscache
 .tmp
+reports

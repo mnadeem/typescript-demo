@@ -3,7 +3,7 @@
 module sample {
 	'use strict'
 
-	export class Circle implements Shape {
+	export class Circle implements Shape, Equality<Circle> {
 
 		constructor(public center: Point, public radius: number) {
 
@@ -17,6 +17,10 @@ module sample {
 	        context.lineWidth = 5;
 	        context.strokeStyle = '#003300';
 	        context.stroke();
+		}
+
+		public equals(other: Circle) : boolean {			
+			return this.radius == other.radius && this.center == other.center;
 		}	
 	}
 
