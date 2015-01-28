@@ -9,7 +9,7 @@ module sample {
 
 	    }
 
-		draw(context: CanvasRenderingContext2D) {		
+		public draw(context: CanvasRenderingContext2D) {		
 			context.beginPath();
 	        context.arc(this.center.x, this.center.y, this.radius, 0, 2 * Math.PI, false);
 	        context.fillStyle = 'green';

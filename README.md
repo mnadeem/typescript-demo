@@ -1,7 +1,7 @@
 # typescript-demo
-[Typescript](http://www.typescriptlang.org/) Grunt Demo app
+[Typescript](http://www.typescriptlang.org/) Integration with Grunt, Karma and Jasmine.
 
-### DIRECTORY DETAILS ###
+### DIRECTORY Structure ###
 ---
 
 * __app/src__ ==> contains typescript files + this is where generated javascript would be kept
@@ -12,7 +12,7 @@
 * __dist__ ==> Concatenated, Compiled, Comressed files would reside here, it should be copied to your web server
 
 
-Usage
+### Usage ###
 ---
 Just do the following and see the magic
 
