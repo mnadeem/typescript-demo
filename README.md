@@ -1,5 +1,10 @@
 # typescript-demo
-[Typescript](http://www.typescriptlang.org/) Integration with Grunt, Karma and Jasmine.
+[Typescript](http://www.typescriptlang.org/) Integration with Grunt, Karma and Jasmine. It basically demonstrate the following
+
+* __Object Orient Javascript__
+* __Generics__
+* __Module, Classes and Interfaces__
+* __Unit Testing__
 
 ### DIRECTORY Structure ###
 ---

@@ -14,6 +14,11 @@ describe('Line API', () => {
     it('should return the number 20 when point y is 20', () => {
         var result = this.point.y;
         expect(result).toBe(20);
-    }); 
+    });
+
+    it('Point Equilatiy Test', () => {
+        var result = this.point.y;
+        expect(this.point.equals(new sample.Point(10, 20))).toBe(true);
+    });  
 
 });

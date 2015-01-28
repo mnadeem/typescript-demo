@@ -20,7 +20,6 @@ module.exports = function(config) {
     files: [
       'vendor/jquery/dist/jquery.js',
       'app/src/**/*.js',
-      'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
 
