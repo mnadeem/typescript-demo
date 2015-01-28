@@ -20,7 +20,7 @@ module sample {
 		}
 
 		public equals(other: Circle) : boolean {			
-			return this.radius == other.radius && this.center == other.center;
+			return this.radius == other.radius && this.center.equals(other.center);
 		}	
 	}
 
