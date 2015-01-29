@@ -4,7 +4,7 @@
 * __Object Orient Javascript__
 * __Generics__
 * __Module, Classes and Interfaces__
-* __Unit Testing__
+* __Unit Testing__ and __Mocking and Spying__
 
 ### DIRECTORY Structure ###
 ---
