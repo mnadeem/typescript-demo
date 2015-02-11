@@ -1,4 +1,6 @@
 # typescript-demo
+For more details refer the [blog](https://www.prokarma.com/blog/2015/02/10/blazing-fast-javascript-development)
+
 [Typescript](http://www.typescriptlang.org/) Integration with Grunt, Karma and Jasmine. It basically demonstrate the following
 
 * __Object Orient Javascript__
